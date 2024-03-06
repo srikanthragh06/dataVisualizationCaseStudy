@@ -1,0 +1,57 @@
+1.hdpData.homeInfo.country-since every country is usa
+
+2.hdpData.homeInfo.currency- obivously dollars
+
+3.hdpData.homeInfo.priceForHDP and (price) - both has same but first one has int data type directly but not second one
+
+4.priceLabel - price is just written in K's
+
+5.address - address has been divided into columns already we don't need it
+
+6.detailUrl - it's a link
+
+7.imgSrc - no significance
+
+8.hdpData.homeInfo.zpid, 9.zpid - useless
+
+10.shouldShowZestimateAsPrice - 7502 are false and blanks / 1 true value
+
+has3DModel - useless may be usefull
+
+hasVide0 - useless may be usefull
+
+11.isHomeRec - only false and null (home recommendation) so it can have same reason as 15(visited)
+
+12.isShowcaseListing-redundant with hdpData.homeInfo.isShowcaseListing
+
+13.isFavorite-useless
+
+14 ( isFeaturedListing ) - it has many false and few true's
+
+15 visited - if nobody visits they gave false so they know who visited and who are not so null values means they didnot get the data
+
+16.info6String - it has more 6500 blanks and 600 rows has many names
+
+17,18. hdpData.homeInfo.latitude, hdpData.homeInfo.longitude - we lattitude and longitude attributes and these two columns has null values but "lattitude" and "longitude" doesnt have null values
+
+hdpData.homeInfo.dateSold - instead of having date it has some weird number we need to check this 
+
+19,20,21. hdpData.homeInfo.bathrooms,hdpData.homeInfo.bedrooms,hdpData.homeInfo.livingArea - redundant
+
+hdpData.homeInfo.daysOnZillow - it has just -1 and null values but may be important mostly not
+
+hdpData.homeInfo.isFeatured - it has 7481 rows with just false and null values, i don't think it will be usefull
+
+22,23,24. ( hdpData.homeInfo.shouldHighlight, hdpData.homeInfo.isUnmappable, hdpData.homeInfo.isPreforeclosureAuction ) - it has just false and null values
+
+25.hdpData.homeInfo.priceForHDP - redundant
+
+hdpData.homeInfo.isNonOwnerOccupied - it has only true and null values
+
+hdpData.homeInfo.isPremierBuilder - it has only false and null values but with above columns it perfectly correlated , so we need to think about this
+
+hdpData.homeInfo.isZillowOwned - like isPremierBuilder is also correlated with above two 
+i.e, all three are correlated either positively or negatively
+
+hdpData.homeInfo.isShowcaseListing - all four are correlated we need to think
+
